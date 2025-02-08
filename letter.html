@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивное письмо</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    .letter {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-collapse: collapse;
+    }
+    .header {
+      padding: 30px 119px;
+      text-align: start;
+    }
+    .logo {
+      font-family: Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 36px;
+      color: #F95A2C;
+      font-weight: bold;
+    }
+    .header-logo {
+      font-size: 36px;
+      color: #F95A2C;
+    }
+    .banner {
+      width: 100%;
+      max-width: 700px;
+    }
+    .banner__table {
+      background-color: #F4F5F7;
+    }
+    .banner__content {
+      text-align: start;
+      width: 50%;
+      padding-left: 49px;
+      vertical-align: middle;
+    }
+    .banner__image {
+      padding: 50px;
+      text-align: right;
+      width: 50%;
+    }
+    .banner__title {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 1.35;
+      margin-bottom: 29px;
+      font-weight: bold;
+      color: #333;
+    }
+    .cta-button, .read-button {
+      font-family: Tahoma, sans-serif;
+      width: 228px;
+      text-align: center;
+      font-family: Georgia, serif;
+      display: inline-block;
+      padding: 14px 0;
+      color: #fff;
+      background-color: #F95A2C;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .content {
+      max-width: 600px;
+      padding: 50px 100px;
+      color: #000;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .greeting__button {
+      width: 470px;
+      padding-top: 46px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #D9DBDD;
+      margin: 0 auto 50px;
+    }
+    .line {
+      padding-bottom: 23px;
+    }
+    .box {
+      border: 1px solid #D9DBDD;
+      border-radius: 8px;
+      padding: 40px;
+      text-align: center;
+    }
+    .box__title {
+      width: 310px;
+      margin: 0 auto 25px;
+    }
+    .white-button {
+      background-color: #fff; 
+      color: #F95A2C; 
+      border: 1px solid #F95A2C;
+      margin-left: 18px;
+    }
+    .footer {
+      width: 100%;
+      background-color: #F4F5F7;
+      font-size: 12px;
+      line-height: 2.1;
+      color: #AEAFB1;
+    }
+    .footer__table {
+      width: 600px;
+      margin: 0 auto;
+    }
+    .footer__content {
+      text-align: left;
+      padding: 50px 0;
+    }
+    .footer-logo {
+      font-size: 24px;
+      color: #9B9B9B;
+      margin-bottom: 22px;
+    }
+    .footer__link {
+      color: #8B8D90;
+      text-decoration: underline;
+    }
+    @media (max-width: 800px) {
+    .letter,
+    .banner__table,
+    .banner__content,
+    .banner__image,
+    .banner__title,
+    .content,
+    .greeting__button,
+    .line,
+    .line__title,
+    .box,
+    .box__title,
+    .footer,
+    .footer__table
+    {
+        width: calc(100vw - 100px);
+        padding: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .banner__table {
+      padding: 20px 0;
+    }
+    .banner__content,
+    .banner__image {
+      display: block;
+      padding: 20px;
+    }
+    .banner__title {
+      padding-bottom: 30px;
+    }
+    .content {
+      padding: 30px 0;
+    }
+    .content__table,
+    .line__title
+    {
+        padding: 20px 0;
+        text-align: left;
+        margin: 0 auto;
+    }
+    .greeting__button,
+    .greeting__text,
+    .box__title {
+        padding-bottom: 20px;
+    }
+    .box {
+        padding: 30px 0;
+    }
+    .media-button {
+        width: 100px;
+       }
+   }
+
+  </style>
+</head>
+<body>
+  <table class="letter">
+    <tr>
+      <td class="header">
+        <h1 class="logo header-logo">LOGO</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="banner">
+        <table class="banner__table">
+          <tr>
+            <td class="banner__content">
+              <p class="banner__title">Это тестовый баннер тестового письма</p>
+              <a href="#" class="cta-button">Спасибо! Приступаю!</a>
+            </td>
+            <td class="banner__image">
+              <img src="person.svg" alt="Chilling working person" style="max-width: 100%; height: auto;">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+        <td class="content">
+            <table class="content__table">
+                <tr>
+                    <td class="greeting">
+                        <p class="greeting__text">Привет, на связи тестовое письмо!
+                            <br><br>Но явные признаки <strong>победы институционализации</strong> могут быть смешаны с уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                        </p>
+                        <p class="greeting__button" style="text-align: center;">
+                            <a href="#" class="read-button">Читать статью</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="line">
+                        <p class="line__title">Внезапно, диаграммы связей представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="box">
+                      <p class="box__title">Разнообразный и богатый опыт говорит нам, что укрепление.</p>
+                      <a href="#" class="cta-button media-button">Оранжевая</a>
+                      <a href="#" class="cta-button white-button media-button">Белая</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr> 
+    <tr>
+        <td class="footer">
+            <table class="footer__table">
+                <tr>
+                    <td class="footer__content">
+                        <h2 class="logo footer-logo">LOGO</h2>
+                        <p>Вы получили это письмо, так как подписались на рассылку на сайте.</p>
+                        <p>Если письмо выглядит некорректно, откройте <a class="footer__link" href="#" target="_blank">web-версию письма</a>.</p>
+                        <p>Если вы не хотите получать подобные письма, вы можете<a class="footer__link" href="#" target="_blank"> отписаться от рассылки</a>.</p>
+                        <br>
+                        <p>© Logo 2021. Все права защищены</p>
+                    </td>
+                </tr>
+            </table> 
+        </td>
+    </tr>
+  </table>
+</body>
+</html>
